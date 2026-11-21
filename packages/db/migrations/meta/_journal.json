@@ -8,6 +8,13 @@
       "when": 1791647614696,
       "tag": "0000_drop_mobile_push_token",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795261587185,
+      "tag": "0001_add_invitation_created_at",
+      "breakpoints": true
     }
   ]
 }

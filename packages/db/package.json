@@ -1,0 +1,20 @@
+{
+  "name": "@starva/db",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./schema": "./src/schema.ts",
+    "./drizzle": "./src/drizzle.ts"
+  },
+  "scripts": {
+    "lint": "biome check",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "drizzle-orm": "^0.45.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.5"
+  }
+}

@@ -39,6 +39,29 @@ Each organization operates independently with:
 - Organization-scoped analytics
 - Category-specific product management
 
+## Monorepo structure
+
+```text
+apps/web        @starva/web — Next.js storefront and application
+apps/mobile     @starva/mobile — Expo mobile application
+packages/db     @starva/db — shared Drizzle schema and database client
+packages/lib    @starva/lib — shared application constants and utilities
+packages/ui     @starva/ui — shared UI components and hooks
+packages/config @starva/config — shared TypeScript and Biome configuration
+```
+
+From the repository root:
+
+- `pnpm dev` — run the web app
+- `pnpm build` — build the web app
+- `pnpm lint` — lint apps and packages
+- `pnpm typecheck` — typecheck apps and packages
+- `pnpm db:push` — push the Drizzle schema to the configured database
+
+Run the mobile app with `pnpm --filter @starva/mobile start`.
+
+For Vercel deployments, set the project's **Root Directory** to `apps/web` and enable **Include files outside the root directory**.
+
 ## License
 
 This project is licensed under the Business Source License 1.1 (BSL 1.1).

@@ -1,0 +1,9 @@
+{
+  "name": "@starva/config",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./biome": "./biome.json"
+  }
+}

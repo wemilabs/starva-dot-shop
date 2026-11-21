@@ -1,3 +1,7 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
 allowBuilds:
   esbuild: false
   msgpackr-extract: false
@@ -6,6 +10,7 @@ overrides:
   'effect@<3.22.1': '^3.22.1'
   '@effect/platform@<0.97.1': '^0.97.1'
   'source-map-js@<1.2.2': '^1.2.2'
+  '@expo/fingerprint>minimatch': '^11.0.1'
 minimumReleaseAgeExclude:
   - '@next/env@16.3.3 || 16.3.6 || 16.3.8 || 16.4.0'
   - '@next/swc-darwin-arm64@16.3.3 || 16.3.6 || 16.3.8 || 16.4.0'

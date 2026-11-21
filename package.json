@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "pnpm --filter @starva/web dev",
     "build": "pnpm --filter @starva/web build",
+    "start": "pnpm --filter @starva/web start",
     "lint": "pnpm --filter \"./apps/*\" --filter \"./packages/*\" lint",
     "typecheck": "pnpm --filter \"./apps/*\" --filter \"./packages/*\" typecheck",
     "db:push": "drizzle-kit push"

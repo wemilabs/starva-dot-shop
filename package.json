@@ -2,6 +2,7 @@
   "name": "strv-web",
   "version": "0.128.0",
   "private": true,
+  "packageManager": "pnpm@10.34.9",
   "scripts": {
     "dev": "next dev --inspect",
     "build": "next build",

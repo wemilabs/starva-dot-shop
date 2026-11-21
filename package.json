@@ -8,7 +8,7 @@
     "start": "pnpm --filter @starva/web start",
     "lint": "pnpm --filter \"./apps/*\" --filter \"./packages/*\" lint",
     "typecheck": "pnpm --filter \"./apps/*\" --filter \"./packages/*\" typecheck",
-    "db:push": "drizzle-kit push"
+    "db:push": "node scripts/with-web-env.mjs drizzle-kit push"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.8",
